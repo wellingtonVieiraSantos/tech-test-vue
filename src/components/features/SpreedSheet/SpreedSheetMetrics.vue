@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import BaseCard from '../../base/BaseCard.vue';
 
-defineProps<{ productsWithImage: number, productsUnvailable: number, productsOk: number, averageScore: number }>()
+defineProps<{ totalProducts: number, productsWithImage: number, productsUnvailable: number, productsOk: number, averageScore: number }>()
 
 </script>
 
@@ -13,7 +13,7 @@ defineProps<{ productsWithImage: number, productsUnvailable: number, productsOk:
         <span class="text-xs text-slate-500">Total de produtos com imagem</span>
       </template>
       <template #content>
-        <p>{{ productsWithImage }}</p>
+        <p>{{ productsWithImage }} <span class="text-sm text-slate-500">/ {{ totalProducts }}</span></p>
       </template>
     </BaseCard>
     <BaseCard class="flex-1 p-2">
@@ -22,7 +22,7 @@ defineProps<{ productsWithImage: number, productsUnvailable: number, productsOk:
         <span class="text-xs text-slate-500">Total de produtos indisponíveis</span>
       </template>
       <template #content>
-        <p>{{ productsUnvailable }} </p>
+        <p>{{ productsUnvailable }} <span class="text-sm text-slate-500">/ {{ totalProducts }}</span></p>
       </template>
     </BaseCard>
     <BaseCard class="flex-1 p-2">
@@ -31,7 +31,7 @@ defineProps<{ productsWithImage: number, productsUnvailable: number, productsOk:
         <span class="text-xs text-slate-500">Total de produtos disponíveis</span>
       </template>
       <template #content>
-        <p>{{ productsOk }}</p>
+        <p>{{ productsOk }} <span class="text-sm text-slate-500">/ {{ totalProducts }}</span></p>
       </template>
     </BaseCard>
     <BaseCard class="flex-1 p-2">

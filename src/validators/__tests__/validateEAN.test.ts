@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { validateEAN } from '../validateEAN';
 
 describe('validateEAN', () => {

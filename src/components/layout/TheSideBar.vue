@@ -7,17 +7,17 @@ const openMenu = ref(false)
 
 <template>
   <!-- nav desktop -->
-  <nav class='md:flex sticky top-0 hidden h-screen flex-col border-r border-slate-300 p-2'> 
+  <nav class='md:flex sticky top-0 hidden h-screen w-64 flex-col bg-indigo-100 shadow p-2'> 
     <header class='h-20 w-full'>
-      <div class='h-full flex items-center justify-start'>
-        <h1 class='text-4xl font-extrabold bg-linear-to-bl from-blue-400 to-blue-700 text-transparent bg-clip-text whitespace-nowrap'> Tech Test </h1>
+      <div class='h-full flex items-center justify-center'>
+        <h1 class='text-3xl font-extrabold bg-linear-to-bl from-blue-400 to-blue-700 text-transparent bg-clip-text whitespace-nowrap'> Tech Test </h1>
       </div>
     </header>
-    <ul class='h-full w-full text-xl flex flex-col justify-center items-center gap-8 p-2 text-slate-400'>
-      <li class='hover:bg-slate-200 w-full text-center p-2 rounded-lg transition-colors duration-300'>
+    <ul class='h-full w-full text-xl flex flex-col pt-30 items-center gap-4 p-2 text-slate-500'>
+      <li class='hover:bg-blue-200 w-full text-center p-2 rounded-lg transition-colors duration-300'>
         <RouterLink to="/dashboard" class='cursor-pointer' active-class='text-black font-semibold'>Dashboard</RouterLink>
       </li>
-      <li class='hover:bg-slate-200 w-full text-center p-2 rounded-lg transition-colors duration-300'>
+      <li class='hover:bg-blue-200 w-full text-center p-2 rounded-lg transition-colors duration-300'>
         <RouterLink to="/gallery" class='cursor-pointer' active-class='text-black font-semibold'>Gallery</RouterLink>
       </li>
     </ul>

@@ -12,9 +12,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="relative w-full flex flex-col items-center p-3">
-    <h1 class="text-3xl font-bold text-left px-2 mb-8 w-full">Galeria de Imagens</h1>
-    <div class='grid gap-4 grid-cols-[repeat(auto-fill,minmax(285px,1fr))]'>
+  <main class="w-full flex flex-col items-center p-3">
+    <h1 class="text-2xl font-bold text-left px-2 mb-8 w-full">Galeria de Imagens</h1>
+    <div class='grid gap-4 grid-cols-[repeat(auto-fill,minmax(350px,1fr))]'>
       <CardImageGallery 
         v-for="item in databaseStore.spreadsheet" 
         :key="item.ID" 

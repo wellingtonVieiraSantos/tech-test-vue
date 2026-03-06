@@ -23,9 +23,10 @@ onUnmounted(() => {
 
 <template>
   <main class="relative w-full lg:h-dvh flex flex-col items-center p-3">
-    <h1 class="text-3xl font-bold w-full text-left px-2 mb-4">Painel de Controle</h1>
-    <p class='w-full text-left px-2 mb-4 text-xl text-gray-500'>Métricas da planilha</p>
+    <h1 class="text-2xl font-bold w-full text-left px-2 mb-2">Painel de Controle</h1>
+    <p class='w-full text-left px-2 mb-2 text-gray-700 text-lg'>Métricas da planilha</p>
     <SpreedSheetMetrics 
+      :totalProducts="databaseStore.spreadsheet.length" 
       :productsWithImage="databaseStore.findTotalProductsWithImage" 
       :productsUnvailable="databaseStore.findTotalProductsUnvailable" 
       :productsOk="databaseStore.findTotalProductsOk" 
@@ -35,7 +36,7 @@ onUnmounted(() => {
       <DownloadButton @save="databaseStore.saveSpreadsheet()"/>
       <CreateProductButton @create="databaseStore.setOpenModal('create')" />
     </div>
-    <div class="flex lg:flex-row flex-col items-start gap-4 w-full justify-start mb-4">
+    <div class="flex lg:flex-row flex-col items-center gap-4 w-full justify-start mb-4">
       <p class="font-semibold lg:flex hidden">Filtros:</p>
       <SearchInput @search="databaseStore.setSearch($event)" />
       <Filters @status="databaseStore.setStatus($event)" />

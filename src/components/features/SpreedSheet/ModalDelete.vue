@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import BaseButton from '../../base/BaseButton.vue';
- import BaseModal from '../../base/BaseModal.vue';
+  import BaseButton from '../../base/BaseButton.vue';
+  import BaseModal from '../../base/BaseModal.vue';
 
-
-const emit = defineEmits(['close', 'delete'])
+  const emit = defineEmits(['close', 'delete'])
 
 </script>
 

@@ -54,7 +54,7 @@ onUnmounted(() => {
 <template>
   <div v-if="props.isOpen" class="fixed inset-0 bg-black/30 backdrop-blur-sm z-40" @click="emit('close')" data-slot="modal-overlay"/>
   <div 
-    class="flex flex-col gap-8 fixed top-1/2 left-1/2 -translate-1/2 z-50 bg-white p-2 py-6 rounded shadow-lg lg:w-1/2 w-full justify-center items-center animate-in fade-in zoom-in duration-300" 
+    class="flex flex-col gap-8 fixed top-1/2 left-1/2 -translate-1/2 z-50 bg-white p-2 py-3 rounded shadow-lg lg:w-1/2 w-full justify-center items-center animate-in fade-in zoom-in duration-300" 
     v-if="props.isOpen" 
     role="dialog" 
     ref="modalRef"

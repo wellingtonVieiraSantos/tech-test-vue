@@ -8,7 +8,7 @@ const ordenation = (event: Event) => {
 </script>
 
 <template>
-    <div class="flex gap-2 items-center justify-center rounded lg:ml-auto lg:pr-4 w-full lg:w-fit">
+    <div class="flex gap-2 items-center justify-center rounded lg:ml-auto w-full lg:w-fit">
         <p class="font-semibold whitespace-nowrap">Ordenar por:</p>
         <select class="w-full outline-none border border-slate-300 rounded p-2" @change="ordenation($event)">
         <option value="">Padrão</option>

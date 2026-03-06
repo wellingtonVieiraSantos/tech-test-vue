@@ -36,7 +36,7 @@ const openUpdateModal = (row: SpreadsheetRow) => {
     </template>
     <template #cell-Status="{ row }">
       <div class="flex gap-2 justify-center">
-        <div :class="row.Status === 'OK' ? ' border-green-700 text-green-700' : row.Status === 'INDISPONIVEL' ? ' border-red-700 text-red-700' : ' border-yellow-700 text-yellow-700'" class="px-2 py-1 border rounded font-bold w-full text-center">{{ row.Status }}</div>
+        <div :class="row.Status === 'OK' ? ' border-green-700 text-green-700 bg-green-100' : row.Status === 'INDISPONIVEL' ? ' border-red-700 text-red-700 bg-red-100' : ' border-yellow-700 text-yellow-700 bg-yellow-100'" class="px-2 py-1 border rounded font-semibold w-full text-center">{{ row.Status }}</div>
       </div>
     </template>
     <template #no-data>
