@@ -10,8 +10,8 @@ defineProps<BaseTableProps<T>>()
 
 <template>
   <section data-slot='table-wrapper' class='relative h-[calc(100vh-10rem)] lg:w-[calc(100vw-15rem)] w-full overflow-x-auto'>
-    <table data-slot='table' class='w-full caption-bottom text-sm font-normal border border-slate-200'>
-        <thead data-slot='table-header' class='[&_tr]:border-b text-lg bg-indigo-200 '>
+    <table data-slot='table' class='w-full caption-bottom text-sm font-normal border border-slate-300'>
+        <thead data-slot='table-header' class='[&_tr]:border-b text-lg bg-indigo-50'>
             <tr data-slot='table-header-row' class='hover:bg-hover data-[state=selected]:bg-success border-b border-slate-200 transition-colors duration-300'>
                 <th data-slot='table-header-cell' v-for="header in headers" :key="String(header)" class='text-foreground p-3 text-center align-middle [&:has([role=checkbox])]:pr-0 *:[[role=checkbox]]:translate-y-[2px] max-w-[20ch] overflow-hidden text-ellipsis whitespace-nowrap'>{{ String(header) }}</th>
             </tr>

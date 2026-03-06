@@ -10,7 +10,6 @@ defineProps<{ totalProducts: number, productsWithImage: number, productsUnvailab
     <BaseCard class="flex-1 p-2">
       <template #header>
         <h2 class="text-lg font-semibold">Produtos com imagem</h2>
-        <span class="text-xs text-slate-500">Total de produtos com imagem</span>
       </template>
       <template #content>
         <p>{{ productsWithImage }} <span class="text-sm text-slate-500">/ {{ totalProducts }}</span></p>
@@ -19,7 +18,6 @@ defineProps<{ totalProducts: number, productsWithImage: number, productsUnvailab
     <BaseCard class="flex-1 p-2">
       <template #header>
         <h2 class="text-lg font-semibold">Produtos indisponíveis</h2>
-        <span class="text-xs text-slate-500">Total de produtos indisponíveis</span>
       </template>
       <template #content>
         <p>{{ productsUnvailable }} <span class="text-sm text-slate-500">/ {{ totalProducts }}</span></p>
@@ -28,7 +26,6 @@ defineProps<{ totalProducts: number, productsWithImage: number, productsUnvailab
     <BaseCard class="flex-1 p-2">
       <template #header>
         <h2 class="text-lg font-semibold">Produtos disponíveis</h2>
-        <span class="text-xs text-slate-500">Total de produtos disponíveis</span>
       </template>
       <template #content>
         <p>{{ productsOk }} <span class="text-sm text-slate-500">/ {{ totalProducts }}</span></p>

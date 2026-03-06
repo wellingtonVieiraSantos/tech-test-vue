@@ -9,7 +9,7 @@
 <template>
   <BaseModal :isOpen="true" @close="emit('close')" :modalAriaLabel="'Deletar Produto'" :modalAriaLabelledby="'Deletar Produto'" :modalAriaDescribedby="'Deletar Produto'" :closeButtonLabel="'Deletar Produto'">
     <template #header data-slot="modal-header">
-      <h2 class="text-2xl font-bold">Tem certeza que deseja deletar este produto?</h2>  
+      <h2 class="text-2xl font-bold mt-10">Tem certeza que deseja deletar este produto?</h2>  
       <p>Esta ação não pode ser desfeita.</p>
     </template>
     <template #footer data-slot="modal-footer">
