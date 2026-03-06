@@ -5,6 +5,7 @@ import BaseCard from '../../../base/BaseCard.vue'
 
 describe('SpreedSheetMetrics - Teste de Integração', () => {
   const defaultProps = {
+    totalProducts: 650,
     productsWithImage: 150,
     productsUnvailable: 25,
     productsOk: 475,
